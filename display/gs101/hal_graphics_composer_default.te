@@ -6,4 +6,13 @@ vndbinder_use(hal_graphics_composer_default)
 
 userdebug_or_eng(`
     allow hal_graphics_composer_default vendor_log_file:dir create_dir_perms;
+
+    # For HWC/libdisplaycolor to generate calibration file.
+    allow hal_graphics_composer_default persist_display_file:file create_file_perms;
+    allow hal_graphics_composer_default persist_display_file:dir rw_dir_perms;
 ')
+
+# allow HWC/libdisplaycolor to read calibration data
+allow hal_graphics_composer_default mnt_vendor_file:dir search;
+allow hal_graphics_composer_default persist_file:dir search;
+allow hal_graphics_composer_default persist_display_file:file r_file_perms;
