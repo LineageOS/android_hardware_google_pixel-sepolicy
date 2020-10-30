@@ -1,0 +1,3 @@
+/dev/socket/astd_if     u:object_r:logd_socket:s0
+/vendor/bin/astc        u:object_r:vendor_shell_exec:s0
+/vendor/bin/astd        u:object_r:vendor_toolbox_exec:s0
