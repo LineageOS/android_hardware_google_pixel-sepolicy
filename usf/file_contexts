@@ -1,0 +1,7 @@
+#
+# USF SELinux file security contexts.
+#
+
+# Sensor registry data files.
+/data/vendor/sensors/registry(/.*)? u:object_r:sensor_reg_data_file:s0
+
