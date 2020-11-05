@@ -1,7 +1,0 @@
-#
-# USF file SELinux type enforcements.
-#
-
-# Declare the sensor registry data file type.
-type sensor_reg_data_file, file_type, data_file_type;
-
