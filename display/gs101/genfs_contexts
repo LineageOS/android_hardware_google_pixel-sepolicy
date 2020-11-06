@@ -1,1 +1,0 @@
-genfscon sysfs /devices/virtual/backlight/panel0-backlight                 u:object_r:sysfs_leds:s0
