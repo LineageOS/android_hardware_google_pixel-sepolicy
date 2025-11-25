@@ -11,7 +11,6 @@ init_daemon_domain(pixelstats_vendor)
 r_dir_file(pixelstats_vendor, sysfs_batteryinfo)
 allow pixelstats_vendor sysfs_batteryinfo:file w_file_perms;
 allow pixelstats_vendor self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
-allow pixelstats_vendor hal_contexthub_default:unix_stream_socket connectto;
 
 allow pixelstats_vendor mnt_vendor_file:dir search;
 allow pixelstats_vendor sysfs_scsi_devices_0000:dir search;
