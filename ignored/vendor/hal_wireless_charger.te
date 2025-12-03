@@ -1,0 +1,2 @@
+binder_call(hal_wireless_charger, pixelsystemservice_app)
+binder_call(hal_wireless_charger, systemui_app)

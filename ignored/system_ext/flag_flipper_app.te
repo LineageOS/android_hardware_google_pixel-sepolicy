@@ -1,0 +1,7 @@
+type flag_flipper_app, coredomain, domain;
+
+app_domain(flag_flipper_app)
+
+unix_socket_connect(flag_flipper_app, aconfigd, aconfigd)
+
+allow flag_flipper_app app_api_service:service_manager find;

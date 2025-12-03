@@ -1,0 +1,2 @@
+dontaudit lpdumpd block_device:blk_file getattr;
+dontaudit lpdumpd block_device:blk_file read;

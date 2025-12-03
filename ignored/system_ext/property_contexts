@@ -1,0 +1,9 @@
+persist.vendor.factoryota. u:object_r:sota_prop:s0
+persist.vendor.nfc.factoryota. u:object_r:sota_prop:s0
+persist.vendor.pulsar u:object_r:vendor_sysuig_prop:s0
+persist.vendor.radio.bootwithlpm u:object_r:sota_prop:s0
+pixelsystemservice.device.contextualawarenessbool u:object_r:pixelsystemservice_contextualawareness_prop:s0 exact bool
+ro.boot.sota u:object_r:sota_prop:s0
+ro.boot.sota. u:object_r:sota_prop:s0
+setupwizard.feature.provisioning_profile_mode u:object_r:setupwizard_feature_prop:s0
+sota.charge.stop.level u:object_r:sota_prop:s0

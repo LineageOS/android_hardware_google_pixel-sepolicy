@@ -1,0 +1,26 @@
+binder_call(pixelsystemservice_app, hal_audio_default)
+binder_call(pixelsystemservice_app, hal_bluetooth_btlinux)
+binder_call(pixelsystemservice_app, hal_wireless_charger)
+binder_call(pixelsystemservice_app, hal_wlcservice)
+binder_call(pixelsystemservice_app, statsd)
+
+binder_use(pixelsystemservice_app)
+
+get_prop(pixelsystemservice_app, vendor_audio_prop_restricted)
+get_prop(pixelsystemservice_app, vendor_fingerprint_prop)
+
+hal_client_domain(pixelsystemservice_app, hal_fingerprint)
+hal_client_domain(pixelsystemservice_app, hal_gia)
+hal_client_domain(pixelsystemservice_app, hal_power_stats)
+
+set_prop(pixelsystemservice_app, touch_property_type)
+set_prop(pixelsystemservice_app, vendor_intelligence_prop)
+set_prop(pixelsystemservice_app, vendor_pss_systemphenotype_prop)
+
+allow pixelsystemservice_app cameraserver_service:service_manager find;
+allow pixelsystemservice_app fwk_vibrator_control_service:service_manager find;
+allow pixelsystemservice_app hal_audio_ext_service:service_manager find;
+allow pixelsystemservice_app hal_wireless_charger_service:service_manager find;
+allow pixelsystemservice_app hal_wlcservice_service:service_manager find;
+allow pixelsystemservice_app pixel_bluetooth_service_type:service_manager find;
+allow pixelsystemservice_app touch_context_service:service_manager find;

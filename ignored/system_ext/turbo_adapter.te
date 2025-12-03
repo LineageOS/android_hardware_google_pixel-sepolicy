@@ -1,0 +1,16 @@
+type turbo_adapter, coredomain, domain, system_suspend_internal_server;
+
+app_domain(turbo_adapter)
+
+binder_call(turbo_adapter, system_suspend_internal_server)
+
+get_prop(turbo_adapter, suspend_prop)
+
+hal_client_domain(turbo_adapter, hal_power)
+hal_client_domain(turbo_adapter, hal_power_stats)
+
+r_dir_file(turbo_adapter, proc_uid_cputime_showstat)
+
+set_prop(turbo_adapter, debug_prop)
+
+allow turbo_adapter app_api_service:service_manager find;

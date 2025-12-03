@@ -1,0 +1,9 @@
+type pixelsystemservice_app, coredomain, domain;
+
+app_domain(pixelsystemservice_app)
+
+set_prop(pixelsystemservice_app, pixelsystemservice_contextualawareness_prop)
+
+allow pixelsystemservice_app app_api_service:service_manager find;
+allow pixelsystemservice_app radio_service:service_manager find;
+allow pixelsystemservice_app statsmanager_service:service_manager find;
