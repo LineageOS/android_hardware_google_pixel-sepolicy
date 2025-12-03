@@ -1,0 +1,1 @@
+binder_call(rild, logger_app)

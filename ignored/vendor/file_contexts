@@ -1,0 +1,2 @@
+/data/vendor/wifi/wlan_logs(/.*)? u:object_r:wifi_logging_data_file:s0
+/vendor/bin/init\.qfp\.sh u:object_r:init_qfp_exec:s0

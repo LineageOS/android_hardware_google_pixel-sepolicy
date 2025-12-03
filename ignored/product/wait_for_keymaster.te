@@ -1,0 +1,1 @@
+dontaudit wait_for_keymaster servicemanager:binder transfer;

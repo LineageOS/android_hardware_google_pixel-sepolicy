@@ -1,0 +1,10 @@
+type pixelsupport_app, coredomain, domain;
+
+app_domain(pixelsupport_app)
+
+bluetooth_domain(pixelsupport_app)
+
+net_domain(pixelsupport_app)
+
+allow pixelsupport_app app_api_service:service_manager find;
+allow pixelsupport_app radio_service:service_manager find;

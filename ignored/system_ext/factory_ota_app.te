@@ -1,0 +1,20 @@
+type factory_ota_app, coredomain, domain;
+
+app_domain(factory_ota_app)
+
+binder_call(factory_ota_app, update_engine)
+
+get_prop(factory_ota_app, system_boot_reason_prop)
+
+net_domain(factory_ota_app)
+
+set_prop(factory_ota_app, sota_prop)
+
+allow factory_ota_app app_api_service:service_manager find;
+allow factory_ota_app nfc_service:service_manager find;
+allow factory_ota_app ota_package_file:dir rw_dir_perms;
+allow factory_ota_app ota_package_file:file create_file_perms;
+allow factory_ota_app radio_service:service_manager find;
+allow factory_ota_app update_engine_service:service_manager find;
+
+dontaudit factory_ota_app gpuservice:binder call;

@@ -1,0 +1,10 @@
+user=_app isPrivApp=true name=com.google.android.apps.internal.betterbug domain=better_bug_app type=privapp_data_file levelFrom=user
+user=_app isPrivApp=true seinfo=GoogleRecorder name=com.google.android.apps.recorder domain=google_recorder_app type=app_data_file levelFrom=all
+user=_app isPrivApp=true seinfo=GoogleRecorder name=com.google.android.apps.recorder:* domain=google_recorder_app type=app_data_file levelFrom=all
+user=_app isPrivApp=true seinfo=google name=com.google.android.GoogleCamera domain=google_camera_app type=app_data_file levelFrom=all
+user=_app isPrivApp=true seinfo=mediashell domain=mediashell_app name=com.google.android.apps.mediashell type=privapp_data_file levelFrom=all
+user=_app isPrivApp=true seinfo=mediashell domain=mediashell_app name=com.google.android.apps.mediashell:* type=privapp_data_file levelFrom=all
+user=_app seinfo=CameraEng name=com.google.android.GoogleCameraEng domain=debug_camera_app type=app_data_file levelFrom=all
+user=_app seinfo=CameraEng name=com.google.android.apps.googlecamera.fishfood domain=debug_camera_app type=app_data_file levelFrom=all
+user=_app seinfo=CameraFishfood name=com.google.android.apps.googlecamera.fishfood domain=google_camera_app type=app_data_file levelFrom=all
+user=_app seinfo=PixelSupport name=com.google.android.apps.pixel.support domain=pixelsupport_app type=app_data_file isPrivApp=true levelFrom=user

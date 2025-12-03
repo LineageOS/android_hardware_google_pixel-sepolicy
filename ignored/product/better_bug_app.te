@@ -1,0 +1,25 @@
+type better_bug_app, coredomain, domain;
+
+app_domain(better_bug_app)
+
+get_prop(better_bug_app, system_boot_reason_prop)
+
+net_domain(better_bug_app)
+
+set_prop(better_bug_app, ctl_start_prop)
+
+allow better_bug_app app_api_service:service_manager find;
+allow better_bug_app mediaserver_service:service_manager find;
+allow better_bug_app perfetto:fd use;
+allow better_bug_app perfetto_traces_bugreport_data_file:dir r_dir_perms;
+allow better_bug_app perfetto_traces_bugreport_data_file:file getattr;
+allow better_bug_app perfetto_traces_data_file:file { getattr read };
+allow better_bug_app privapp_data_file:file execute;
+allow better_bug_app privapp_data_file:lnk_file r_file_perms;
+allow better_bug_app radio_service:service_manager find;
+allow better_bug_app shell_data_file:dir r_dir_perms;
+allow better_bug_app shell_data_file:file r_file_perms;
+allow better_bug_app system_api_service:service_manager find;
+allow better_bug_app trace_data_file:file { getattr read };
+allow better_bug_app wm_trace_data_file:dir r_dir_perms;
+allow better_bug_app wm_trace_data_file:file getattr;
