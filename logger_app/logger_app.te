@@ -1,3 +1,4 @@
+# Selinux rule for PixelLogger app
 type logger_app, domain;
 
 userdebug_or_eng(`
@@ -12,4 +13,6 @@ userdebug_or_eng(`
   allow logger_app wifi_logging_data_file:file create_file_perms;
   set_prop(logger_app, vendor_wlan_logging_prop)
   set_prop(logger_app, vendor_wifi_perf_diag_prop)
+
+  starting_at_board_api(202604, `typeattribute logger_app treble_labeling_violators;')
 ')
