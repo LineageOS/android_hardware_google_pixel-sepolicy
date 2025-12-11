@@ -1,5 +1,7 @@
 type google_recorder_app, domain;
 
+typeattribute google_recorder_app coredomain;
+
 app_domain(google_recorder_app)
 
 get_prop(google_recorder_app, graphics_config_writable_prop)
