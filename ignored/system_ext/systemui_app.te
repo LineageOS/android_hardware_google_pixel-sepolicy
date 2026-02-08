@@ -2,6 +2,7 @@ type systemui_app, coredomain, domain;
 
 app_domain(systemui_app)
 
+get_prop(systemui_app, bluetooth_finder_prop)
 get_prop(systemui_app, bluetooth_lea_prop)
 get_prop(systemui_app, keyguard_config_prop)
 get_prop(systemui_app, qemu_hw_prop)

@@ -3,6 +3,10 @@ binder_call(systemui_app, hal_wireless_charger)
 binder_call(systemui_app, pixel_battery_domain)
 binder_call(systemui_app, twoshay)
 
+get_prop(systemui_app, fingerprint_sp_prop)
+
+set_prop(systemui_app, debug_prop)
+
 hal_client_domain(systemui_app, hal_fingerprint)
 
 allow systemui_app hal_pixel_display_service:service_manager find;
