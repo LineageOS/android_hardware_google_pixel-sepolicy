@@ -8,6 +8,10 @@ get_prop(systemui_app, keyguard_config_prop)
 get_prop(systemui_app, qemu_hw_prop)
 get_prop(systemui_app, radio_cdma_ecm_prop)
 
+hal_client_domain(systemui_app, hal_face)
+
+r_dir_file(systemui_app, sysfs_gpu)
+
 set_prop(systemui_app, bootanim_system_prop)
 set_prop(systemui_app, debug_prop)
 set_prop(systemui_app, debug_tracing_desktop_mode_visible_tasks_prop)
@@ -18,6 +22,7 @@ allow systemui_app app_api_service:service_manager find;
 allow systemui_app audioserver_service:service_manager find;
 allow systemui_app cameraserver_service:service_manager find;
 allow systemui_app color_display_service:service_manager find;
+allow systemui_app hal_face_ext_service:service_manager find;
 allow systemui_app mediaextractor_service:service_manager find;
 allow systemui_app mediametrics_service:service_manager find;
 allow systemui_app mediaserver_service:service_manager find;

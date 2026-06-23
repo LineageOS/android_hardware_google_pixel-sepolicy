@@ -1,5 +1,8 @@
 binder_call(pixelsystemservice_app, hal_audio_default)
 binder_call(pixelsystemservice_app, hal_bluetooth_btlinux)
+binder_call(pixelsystemservice_app, hal_bluetooth_default)
+binder_call(pixelsystemservice_app, hal_camera_default)
+binder_call(pixelsystemservice_app, hal_graphics_composer_default)
 binder_call(pixelsystemservice_app, hal_plat_security)
 binder_call(pixelsystemservice_app, hal_wireless_charger)
 binder_call(pixelsystemservice_app, hal_wlcservice)
@@ -24,7 +27,13 @@ allow pixelsystemservice_app cameraserver_service:service_manager find;
 allow pixelsystemservice_app fwk_vibrator_control_service:service_manager find;
 allow pixelsystemservice_app hal_audio_ext_service:service_manager find;
 allow pixelsystemservice_app hal_plat_security_service:service_manager find;
+allow pixelsystemservice_app hal_timestamp_service:service_manager find;
 allow pixelsystemservice_app hal_wireless_charger_service:service_manager find;
 allow pixelsystemservice_app hal_wlcservice_service:service_manager find;
+allow pixelsystemservice_app pixel_bluetooth_hwservice_type:hwservice_manager find;
 allow pixelsystemservice_app pixel_bluetooth_service_type:service_manager find;
+allow pixelsystemservice_app pixel_display_hal_service_type:service_manager find;
+allow pixelsystemservice_app proc_gs_perf_mon:dir r_dir_perms;
+allow pixelsystemservice_app proc_gs_perf_mon:file r_file_perms;
 allow pixelsystemservice_app touch_context_service:service_manager find;
+allow pixelsystemservice_app vendor_camera_interference_avoidance_service:service_manager find;

@@ -1,0 +1,11 @@
+type backup_ota_log, coredomain, domain;
+type backup_ota_log_exec, exec_type, file_type, system_file_type;
+
+init_daemon_domain(backup_ota_log)
+
+r_dir_file(backup_ota_log, update_engine_log_data_file)
+
+allow backup_ota_log block_device:dir search;
+allow backup_ota_log fips_block_device:blk_file rw_file_perms;
+allow backup_ota_log toolbox_exec:file execute_no_trans;
+allow backup_ota_log ufs_internal_block_device:blk_file rw_file_perms;
