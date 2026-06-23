@@ -1,1 +1,3 @@
 binder_call(gia, pixelsystemservice_app)
+
+hal_client_domain(better_bug_app, hal_gia)

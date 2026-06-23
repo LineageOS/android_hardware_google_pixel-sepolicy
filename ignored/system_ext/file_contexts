@@ -1,1 +1,2 @@
+/system_ext/bin/backup_ota_log\.sh u:object_r:backup_ota_log_exec:s0
 /system_ext/bin/convert_to_ext4\.sh u:object_r:convert-to-ext4-sh_exec:s0

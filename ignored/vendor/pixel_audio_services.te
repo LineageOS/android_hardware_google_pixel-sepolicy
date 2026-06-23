@@ -1,0 +1,7 @@
+binder_call(pixelaudioservices_app, hal_audio_default)
+
+allow pixelaudioservices_app activity_service:service_manager find;
+allow pixelaudioservices_app gpu_service:service_manager find;
+allow pixelaudioservices_app hal_audio_ext_service:service_manager find;
+allow pixelaudioservices_app netstats_service:service_manager find;
+allow pixelaudioservices_app thermal_service:service_manager find;

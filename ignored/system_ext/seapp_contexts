@@ -1,4 +1,5 @@
 user=_app isPrivApp=true name=com.android.theflippinapp domain=flag_flipper_app type=app_data_file levelFrom=all seinfo=platform
+user=_app isPrivApp=true name=com.google.android.apps.pixel.tabby domain=pixelaudioservices_app type=privapp_data_file levelFrom=user
 user=_app isPrivApp=true name=com.google.android.brownoutdetection domain=brownout_detection_app type=app_data_file levelFrom=all
 user=_app isPrivApp=true seinfo=platform name=com.google.mds domain=modem_diagnostic_app type=app_data_file levelFrom=user
 user=_app seinfo=platform name=com.android.systemui domain=systemui_app type=app_data_file levelFrom=all
