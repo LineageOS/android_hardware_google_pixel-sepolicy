@@ -19,6 +19,7 @@ hal_client_domain(pixelsystemservice_app, hal_power_stats)
 
 set_prop(pixelsystemservice_app, touch_property_type)
 set_prop(pixelsystemservice_app, vendor_intelligence_prop)
+set_prop(pixelsystemservice_app, vendor_pixelmd_config_experiment_prop)
 set_prop(pixelsystemservice_app, vendor_pss_systemphenotype_prop)
 
 net_domain(pixelsystemservice_app)

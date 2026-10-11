@@ -6,8 +6,10 @@ set_prop(pixelsystemservice_app, pixelsystemservice_contextualawareness_prop)
 
 allow pixelsystemservice_app app_api_service:service_manager find;
 allow pixelsystemservice_app audioserver_service:service_manager find;
+allow pixelsystemservice_app fwk_stats_service:service_manager find;
 allow pixelsystemservice_app mediaextractor_service:service_manager find;
 allow pixelsystemservice_app mediametrics_service:service_manager find;
 allow pixelsystemservice_app mediaserver_service:service_manager find;
+allow pixelsystemservice_app nfc_service:service_manager find;
 allow pixelsystemservice_app radio_service:service_manager find;
 allow pixelsystemservice_app statsmanager_service:service_manager find;
